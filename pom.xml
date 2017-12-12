@@ -29,8 +29,8 @@
 
   <scm>
     <url>https://github.com/LykkeCity/AlgoStore.Algo.Archetype</url>
-    <connection>scm:git:ssh://git@github.com:LykkeCity/AlgoStore.Algo.Archetype.git</connection>
-    <developerConnection>scm:git:ssh://git@github.com:LykkeCity/AlgoStore.Algo.Archetype.git</developerConnection>
+    <connection>scm:git:ssh://git@github.com/LykkeCity/AlgoStore.Algo.Archetype.git</connection>
+    <developerConnection>scm:git:ssh://git@github.com/LykkeCity/AlgoStore.Algo.Archetype.git</developerConnection>
     <tag>algos-archetype-1.0</tag>
   </scm>
 

@@ -1,0 +1,8 @@
+{
+"apiPackage":"com.lykke.hft.client",
+"modelPackage":"com.lykke.hft.model",
+  "groupId":"com.lykke.hft",
+  "artifactId":"hft-client",
+  "artifactVersion":"1.0.0",
+  "library":"feign"
+}

@@ -2,6 +2,8 @@
 Java maven Algo Archetype
 
 Generating an algo
+In order to generate an algo you may your Lykke Algo java archetype 
+
 ```
 mvn archetype:generate    \
 -DarchetypeGroupId=com.lykke.algos    \
@@ -13,10 +15,11 @@ mvn archetype:generate    \
 -DarchetypeCatalog=https://oss.sonatype.org/content/repositories/snapshots/
 ```
 
-This will create a java maven project for you in myalgo folder. 
-Please go inside it. 
+This will create a java maven project for you with groupId com.algo, artifact id myalgo in directory myalgo in your current folder. 
+Please go inside and review the contentns.
+```
 cd myalgo
-
+```
 In order to make your algo to work please create a file called hft-client.properties 
 with the following content in myalgo/src/main/resources
 ```

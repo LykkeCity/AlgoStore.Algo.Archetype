@@ -23,7 +23,7 @@ cd myalgo
 In order to make your algo to work please create a file called hft-client.properties 
 with the following content in myalgo/src/main/resources
 ```
-HFT_API_BASE_PATH=https://hft-service-dev.lykkex.net
+HFT_API_BASE_PATH=<LYKKE HFT API trading endpoint, e.g https://hft-service-dev.lykkex.net>
 HFT_KEY=<YOUR HFT API client key>
 WALLET_KEY=<YOUR WALLET KEY>
 ASSET_PAIR=<THE ASSET PAIR YOU WANT TO TRADE, e.g BTCUSD> 
@@ -39,7 +39,7 @@ This will generate an executable jar with dependencies file in your target folde
 ```
 target/myalgo-1.0-SNAPSHOT-jar-with-dependencies.jar
 ```
-In order to verify is it trading you may start it with:
+In order to verify it you may execute:
 ```
 java -jar myalgo/target/myalgo-1.0-SNAPSHOT-jar-with-dependencies.jar
 ```
@@ -49,7 +49,8 @@ If you see an output like
 ------------Buy some coins on the market price!------------
 ------------Selling XXX coins with some profit on YYY price!!!------------
 ```
-Then your algo is working and you are ready to upload it in algostore.
+Then your algo is working and you are ready to deploy it in AlgoStore.
+For the purpose upload your jar-with-dependencies.jar file there.
 
 
 

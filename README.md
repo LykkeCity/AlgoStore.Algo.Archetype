@@ -5,14 +5,15 @@ Generating an algo
 In order to generate an algo you may your Lykke Algo java archetype 
 
 ```
-mvn archetype:generate    \
--DarchetypeGroupId=com.lykke.algos    \
--DarchetypeArtifactId=algos-archetype    \
--DarchetypeVersion=1.0-SNAPSHOT  \
--DgroupId=com.algo  \
--DartifactId=myalgo \ 
--Dversion=1.0-SNAPSHOT  \
--DarchetypeCatalog=https://oss.sonatype.org/content/repositories/snapshots/
+mvn org.apache.maven.plugins:maven-archetype-plugin:2.4:generate \
+-DarchetypeGroupId=com.lykke.algos \
+-DarchetypeArtifactId=algos-archetype \
+-DarchetypeVersion=1.0-SNAPSHOT \
+-DgroupId=com.algo \
+-DartifactId=myalgo \
+-Dversion=1.0-SNAPSHOT \
+-DarchetypeCatalog=https://oss.sonatype.org/content/repositories/snapshots
+
 ```
 
 This will create a java maven project for you with groupId com.algo, artifact id myalgo in directory myalgo in your current folder. 
@@ -20,7 +21,7 @@ Please go inside and review the contentns.
 ```
 cd myalgo
 ```
-In order to make your algo to work please create a file called hft-client.properties 
+In order to make your algo to work please create a file called hft.properties 
 with the following content in myalgo/src/main/resources
 ```
 HFT_API_BASE_PATH=<LYKKE HFT API trading endpoint, e.g https://hft-service-dev.lykkex.net>
